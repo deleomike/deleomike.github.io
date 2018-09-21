@@ -1,10 +1,11 @@
 <!-- Tab links -->
 <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Tab1')">COLLEGE ATHLETICS</button>
-    <button class="tablinks" onclick="openCity(event, 'Tab2')">COLLEGE ENGINEERING PROJECTS</button>
-    <button class="tablinks" onclick="openCity(event, 'Tab3')">COLLEGE RESEARCH</button>
-    <button class="tablinks" onclick="openCity(event, 'Tab4')">COLLEGE ENGINEERING WORK</button>
-    <button class="tablinks" onclick="openCity(event, 'Tab5')">INQUIRIES</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab1')">COLLEGE ATHLETICS</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab2')">COLLEGE ENGINEERING PROJECTS</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab3')">COLLEGE RESEARCH</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab4')">COLLEGE ENGINEERING WORK</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab5')">SAMPLES</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab6')">INQUIRIES</button>
 </div>
 
 <!-- Tab content -->
@@ -149,7 +150,28 @@
     
 </div>
 
-<div id="Tab5" class="tabcontent">
+<div id='Tab5' class="tabcontent">
+    <h3>
+        SAMPLES OF MY WORK
+    </h3>
+    
+    In this page I have curated some snippets of code that I personally feel best represent my skills in coding.
+    <br>
+    <br>
+    <i>
+        Contents
+    </i>
+    <ol>
+        <li>MIPS SuperScalar Processor Simulation</li>
+        <li>The Classic BattleShip Game in Assembly</li>
+        <li>Overlay Generator For ROM</li>
+    </ol>
+    
+    
+    
+</div>
+
+<div id="Tab6" class="tabcontent">
 </div>
 
 <!-- BEGIN HTML FILE -->
@@ -203,7 +225,7 @@
         <body>
 
             <script>
-                function openCity(evt, cityName) {
+                function openTab(evt, cityName) {
                     var i, tabcontent, tablinks;
                     tabcontent = document.getElementsByClassName("tabcontent");
                     for (i = 0; i < tabcontent.length; i++) {
