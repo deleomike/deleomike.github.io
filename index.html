@@ -26,7 +26,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" id="Degree" href='#' data-page="degree">Degree</a>
                     <a class="dropdown-item" href='#' data-page="athletics">Athletics</a>
-                    <a class="dropdown-item" href='#' data_page="engineering_projects">Engineering Projects</a>
+                    <a class="dropdown-item" id="Engineering_Projects"href='#' data_page="engineering_projects">Engineering Projects</a>
                     <a class="dropdown-item" href='#' data-page="engineering_work">Engineering Work</a>
                     <a class="dropdown-item" href='#' data-page="research">Research</a>
                     <a class="dropdown-item" href='#' data-page="clubs">Clubs</a>
@@ -328,9 +328,6 @@
     
     <!-- The Body of my Home Page -->
     <body>
-        <div id="topBar">
-            <a href ="#" id="load_home"> HOME </a>
-        </div>
         <div id="content">
             <p>Hello! My name is Mike DeLeo. This is my website! Hello and Welcome</p>
             <img src = "deleomike.github.io/Images/Deleo_M_18.jpg" style = "width:500px;height = 600px">
@@ -341,10 +338,16 @@
         
         <script>
         $(document).ready( function() {
-            $("#load_home").click( function() {
-                $("#content").load("/Users/michaeldeleo/Documents/GitHub/deleomike.github.io/degree.html");
+            $("#Degree").click( function() {
+                $("#content").load("https://deleomike.github.io/degree.html");
             });
                           console.log(10);
+        });
+        $(document).ready( function() {
+            $("#Engineering_Projects").click( function() {
+                $("#content").load("https://deleomike.github.io/engineering_projects.html");
+            });
+            console.log(10);
         });
         </script>
 
