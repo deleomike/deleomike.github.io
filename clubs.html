@@ -1,6 +1,3 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Mike DeLeo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,7 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#" data-page="home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Samples</a>
@@ -24,12 +21,12 @@
                     Undergraduate
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" id="Degree" href='#' data-page="degree">Degree</a>
-                    <a class="dropdown-item" href='#' data-page="athletics">Athletics</a>
-                    <a class="dropdown-item" href='#' data_page="engineering_projects">Engineering Projects</a>
-                    <a class="dropdown-item" href='#' data-page="engineering_work">Engineering Work</a>
-                    <a class="dropdown-item" href='#' data-page="research">Research</a>
-                    <a class="dropdown-item" href='#' data-page="clubs">Clubs</a>
+                    <a class="dropdown-item" href='#'>Degree</a>
+                    <a class="dropdown-item" href="#">Athletics</a>
+                    <a class="dropdown-item" href="#">Engineering Projects</a>
+                    <a class="dropdown-item" href="#">Engineering Work</a>
+                    <a class="dropdown-item" href='#'>Research</a>
+                    <a class="dropdown-item" href='#'>Clubs</a>
                     
                 </div>
             </li>
@@ -46,8 +43,8 @@
                     Achievements
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href='#' data-page="eagle_scout">Eagle Scout</a>
-                    <a class="dropdown-item" href='#' data-page="hackathons">Hackathons</a>
+                    <a class="dropdown-item" href='#'>Eagle Scout</a>
+                    <a class="dropdown-item" href='#'>Hackathons</a>
                 </div>
             </li>
             
@@ -328,25 +325,15 @@
     
     <!-- The Body of my Home Page -->
     <body>
-        <div id="topBar">
-            <a href ="#" id="load_home"> HOME </a>
-        </div>
-        <div id="content">
-            <p>Hello! My name is Mike DeLeo. This is my website! Hello and Welcome</p>
+        <p>Hello! My name is Mike DeLeo. This is my website! Hello and Welcome</p>
             <img src = "deleomike.github.io/Images/Deleo_M_18.jpg" style = "width:500px;height = 600px">
-            <p>I am a senior at Penn State Erie, The Behrend College. This is my CV website.<br>
-            My Interests include higher level programming such as C++,C,C#. I am interested <br>
-            in pursuing further education in the field of Artificial Intelligence and Machine Learning<br></p>
-        </div>
+        <p>I am a senior at Penn State Erie, The Behrend College. This is my CV website.<br>
+        My Interests include higher level programming such as C++,C,C#. I am interested <br>
+		in pursuing further education in the field of Artificial Intelligence and Machine Learning<br></p>
         
-        <script>
-        $(document).ready( function() {
-            $("#load_home").click( function() {
-                $("#content").load("/Users/michaeldeleo/Documents/GitHub/deleomike.github.io/degree.html");
-            });
-                          console.log(10);
-        });
-        </script>
+        <a href = "https://www.linkedin.com/in/michael-deleo-psu"> Link to My Linkedin</a>
+        <br>
+        <a href = "https://github.com/deleomike"> Link to My GitHub</a>
 
         <!-- Format 1 - Use Color Name
         <table bgcolor = "yellow" width = "5%">
@@ -401,18 +388,8 @@
     -->
 
     </body>
-    <script>
-        $(document).ready( function() {
-                          $("#load_home").on("click", function() {
-                                             $("#content").load("./degree.html");
-                                             });
-                          });
-                
-        </script>
         
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
-
 </html>
