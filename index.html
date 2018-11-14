@@ -25,33 +25,49 @@
                 <a class="nav-link" id="Samples" href="#">Samples</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="Inquiries" href="#">Inquiries</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#">Links</a>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Undergraduate
+                    Education
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" id="Degree" href="#" data-page="degree">Degree</a>
-                    <a class="dropdown-item" id="Athletics" href="#" data-page="athletics">Athletics</a>
-                    <a class="dropdown-item" id="Engineering_Projects"href="#" data_page="engineering_projects">Engineering Projects</a>
-                    <a class="dropdown-item" id="Engineering_Work" href="#" data-page="engineering_work">Engineering Work</a>
-                    <a class="dropdown-item" id="Research" href="#" data-page="research">Research</a>
-                    <a class="dropdown-item" id="Clubs" href="#" data-page="clubs">Clubs</a>
-                    
+                    <a class="dropdown-item" id="Undergraduate_Ed" href="#" data-page="degree">Undergraduate</a>
+                    <a class="dropdown-item" id="Graduate_Ed" href="#" data-page="athletics">Graduate</a>
                 </div>
             </li>
 			</li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Graduate
+                    Work Experience
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <!--<a class="Research" href='#'>Research</a>-->
+                    <a class="dropdown-item" id="Undergraduate_Wk" href='#'>Undergraduate</a>
+                    <a class="dropdown-item" id="Graduate_Wk" href='#'>Graduate</a>
+                    <a class="dropdown-item" id="Post_Wk" href="#" data-page="athletics">Post-Graduation</a>
                 </div>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Technical Experience
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" id="Undergraduate_Tech_Exp" href='#'>Undergraduate</a>
+                    <a class="dropdown-item" id="Graduate_Tech_Exp" href='#'>Graduate</a>
+                    <a class="dropdown-item" id="Post_Tech_Exp" href="#" data-page="athletics">Post-Graduation</a>
+                </div>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ExtraCurricular
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" id="Undergraduate_Extra" href='#'>Undergraduate and Prior</a>
+                    <a class="dropdown-item" id="Graduate_Extra" href='#'>Graduate</a>
+                    <a class="dropdown-item" id="Post_Extra" href="#" data-page="athletics">Post-Graduation</a>
+                </div>
+            </li>
+            
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Achievements
@@ -86,27 +102,26 @@
         
         <script>
         $(document).ready( function() {
-            $("#Degree").click( function() {
-                $("#content").load("https://deleomike.github.io/degree.html");
+            $("#Undergraduate_Ed").click( function() {
+                $("#content").load("https://deleomike.github.io/Undergraduate/Undergraduate_degree.html");
             })
-			$("#Home").click( function() {
-                $("#content").load("https://deleomike.github.io/home.html");
+			$("#Undergraduate_Wk").click( function() {
+                $("#content").load("https://deleomike.github.io/Undergraduate/Undergraduate_work.html");
 			})
-			$("#Samples").click( function(){
-				$("#content").load("https://deleomike.github.io/samples.html");
+			$("#Undergraduate_Extra").click( function(){
+				$("#content").load("https://deleomike.github.io/Undergraduate/Undergraduate_extra.html");
 			})
-			$("#Inquiries").click( function(){
-				$("#content").load("https://deleomike.github.io/inquiries.html")
+            ///////////
+			$("#Graduate_Ed").click( function(){
+				$("#content").load("https://deleomike.github.io/Graduate/Graduate_degree.html")
 			})
-			$("#Athletics").click( function(){
-				$("#content").load("https://deleomike.github.io/athletics.html")
+			$("#Graduate_Wk").click( function(){
+				$("#content").load("https://deleomike.github.io/Graduate/Graduate_work.html")
 			})
-			$("#Engineering_Projects").click( function(){
-				$("#content").load("https://deleomike.github.io/engineering_projects.html")
+			$("#Graduate_Extra").click( function(){
+				$("#content").load("https://deleomike.github.io/Graduate/Graduate_extra.html")
 			})
-			$("#Engineering_Work").click( function(){
-				$("#content").load("https://deleomike.github.io/engineering_work.html")
-			})
+            ///////////
 			$("#Research").click( function(){
 				$("#content").load("https://deleomike.github.io/research.html")
 			})
